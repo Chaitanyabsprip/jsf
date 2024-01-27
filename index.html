@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Macros</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="macro.js"></script>
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+  </head>
+
+  <body>
+    <def-macro name="comp1" style="display: none">
+      <p style="padding: 4px; background-color: #ff0000">This is a line</p>
+    </def-macro>
+    <def-macro name="comp2" style="display: none">
+      <p style="padding: 4px; background-color: #00ff00">
+        This is another line
+      </p>
+    </def-macro>
+    <h1>HTML client side Macros in play</h1>
+    <div macro="comp1"></div>
+    <div macro="comp2"></div>
+    <select name="gender">
+      <option>female</option>
+      <option>male</option>
+      <option>other</option>
+    </select>
+  </body>
+</html>
